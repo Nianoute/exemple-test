@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container } from "./components/atoms";
+import { NightModeProvider } from "./NigthModeProvider";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NightModeProvider value={false}>
+      <div className="App">
+        <h1>Hello cannard</h1>
+        <div>Ouais</div>
+        <Container.Base message="totoToto" bgColor="purple">
+          ifheouibfouizeuoi
+        </Container.Base>
+        <Container.Padding blocked={false} padding="20px" bgColor="blue">
+          uzdgou ugadzfiu iufgazh
+        </Container.Padding>
+      </div>
+    </NightModeProvider>
   );
 }
 
