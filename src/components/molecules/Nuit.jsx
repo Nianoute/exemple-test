@@ -6,9 +6,9 @@ import Default from "./Button/Default";
 const Bonjour = () => {
   return (
     <Container.Base>
-      <Typographie.Title>Heloo</Typographie.Title>
-      <Typographie.Link>Hello</Typographie.Link>
-      <Typographie.Paragraph>Helo</Typographie.Paragraph>
+      <Typographie.Title>Night</Typographie.Title>
+      <Typographie.Link>Nuit</Typographie.Link>
+      <Typographie.Paragraph>Noche</Typographie.Paragraph>
       <Default />
     </Container.Base>
   );

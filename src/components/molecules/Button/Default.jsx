@@ -2,11 +2,11 @@ import React from "react";
 import { Container } from "../../atoms";
 import Typographie from "../../atoms/Typographie";
 
-const Default = () => {
+const Default = (props) => {
   return (
-    <Container.Base>
-      <Typographie.Paragraph>Default</Typographie.Paragraph>
-    </Container.Base>
+    <button onClick={() => props.setPage(props.children)} className="button">
+      <Typographie.Paragraph>{props.children}</Typographie.Paragraph>
+    </button>
   );
 };
 

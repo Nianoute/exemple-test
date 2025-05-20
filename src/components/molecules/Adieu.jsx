@@ -3,15 +3,15 @@ import { Container } from "../atoms";
 import Typographie from "../atoms/Typographie";
 import Default from "./Button/Default";
 
-const Bonjour = () => {
+const Adieu = () => {
   return (
     <Container.Base>
-      <Typographie.Title>Heloo</Typographie.Title>
-      <Typographie.Link>Hello</Typographie.Link>
-      <Typographie.Paragraph>Helo</Typographie.Paragraph>
+      <Typographie.Title>GoodBye</Typographie.Title>
+      <Typographie.Link>Adios</Typographie.Link>
+      <Typographie.Paragraph>Adieu</Typographie.Paragraph>
       <Default />
     </Container.Base>
   );
 };
 
-export default Bonjour;
+export default Adieu;
